@@ -11,20 +11,36 @@
          text-decoration:none;
          
       }
-      @media only screen and (min-width: 601px) and (max-width: 1024px) {
-      *{
-      margin:4px;
-      padding:3px;
-        
+      .himg{
+         border: 2px solid blue;
+         border-radius:18px;
       }
-      
+      .himg:hover{
+         opacity:0.3;
+      }
+      .ftr{
+         visibility:hidden;
+      }
+      @media (max-width: 600px) {
+      *{
+         max-width: 480px;
+         margin: 0 auto;
+         padding:5px;
+      }
+      .ftr{
+         visibility: visible;
+         opacity:0.7;
+      }
 }
+
    </style>
    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Moloy's site</title>
    </head>
    <body>
       <h1>Welcome to parsonal News portal</h1>
+       <img class="himg" src="dhonePata.jpg" width="100px;">
       <p>Get daily news update</p>
       <br>
       <div>
@@ -64,4 +80,8 @@
          <hr>
       </div>
    </body>
+   <dr></dr>
+   <footer>
+      <p class="ftr">----------------------------<br>A first newslet which can find what peoples mind chaos.</p>
+   </footer>
 </html>
