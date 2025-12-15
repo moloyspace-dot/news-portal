@@ -4,12 +4,11 @@
          color:red;
       }
       *{
-         background-color:black;
          color:white;
-         margin:8px;
       }
       body{
          border:1px solid blanchedalmond;
+         margin:8px;
       }
       button>a{
          text-decoration:none;
@@ -21,6 +20,9 @@
       .himg:hover{
          opacity:0.3;
       }
+      img{
+         max-width:100%
+      }
       .ftr{
          visibility:hidden;
       }
@@ -28,8 +30,8 @@
       @media (max-width: 600px) {
       *{
          max-width: 960px;
-         margin: 4px;
-         padding:5px;
+         margin: .5px;
+         padding:1px;
       }
       .ftr{
          visibility: visible;
@@ -43,24 +45,29 @@
       <title>Moloy's site</title>
    </head>
    <body>
-      <h1>Welcome to parsonal News portal</h1>
-       <img class="himg" src="dhonePata.jpg" width="100px;">
-      <p>Get daily news update</p>
-      <br>
-      <div>
-         <marquee>This mind awearness week- Someone takes smoke with a fresh mind believeing the voice of 'you have nothing to happen bad'. </marquee>
+
+      <div id="head">
+         <h1>Welcome to parsonal News portal</h1>
+         <img class="himg" src="dhonePata.jpg" width="100px;">
+         <p>Get daily news update</p>
+         <br>
+         <div>
+            <marquee>This mind awearness week- Someone takes smoke with a fresh mind believeing the voice of 'you have nothing to happen bad'. </marquee>
+            <marquee style="color:red">In is bad feeling avid family conflict like relative conflict or sexual conflict. In previous time some powerful voices attract us to sexual activities. Support others</marquee>
+         </div>
+         <br>
+         <div class="btn">
+            <button><a href="news.html">News</a></button>
+            <button><a href="story.html">Story</a></button>
+            <button><a href="msg.html">Message</a></button>
+            <button><a href="about.html">About</a></button>
+         </div>
+         <br>
+         <hr width="75%">
+         <br>
       </div>
-      <br>
-      <div class="btn">
-         <button><a href="news.html">News</a></button>
-         <button><a href="story.html">Story</a></button>
-         <button><a href="msg.html">Message</a></button>
-         <button><a href="about.html">About</a></button>
-      </div>
-      <br>
-      <hr width="75%">
-      <br>
-      <div>
+
+      <div id="main">
          <img src="photos/hospital1.jpg" width="400px">
          <p>Chaos of peoples mind say this world is too much old. And it took more old to understand the thing that it's destroyed after our last birth.</p>
          <date>15/12/2025</date>
@@ -78,9 +85,11 @@
          <date>15/12/2025</date>
          <hr>
       </div>
+
    </body>
    <dr></dr>
-   <footer>
+
+   <footer id="footer">
       <p class="ftr">----------------------------<br>A first newslet which can find what peoples mind chaos.</p>
    </footer>
 </html>
