@@ -3,16 +3,13 @@
       h1{
          color:red;
       }
-      *{
-         color:white;
-         background-color:4A5466;
-      }
       body{
          border:1px solid blanchedalmond;
          margin:8px;
       }
       button>a{
          text-decoration:none;
+         color: inherit;
       }
       .himg{
          border: 2px solid blue;
@@ -22,7 +19,16 @@
          opacity:0.3;
       }
       img{
-         max-width:100%
+         max-width:100%;
+         border:2px solid white;
+         border-radius:13px;
+         margin:14px;
+      }
+      h2,time,p {
+         margin:13px;
+      }
+      div>button{
+         margin-left:15px;
       }
       .ftr{
          visibility:hidden;
@@ -39,53 +45,47 @@
          opacity:0.7;
       }
 }
-
    </style>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Moloy's site</title>
    </head>
-   <body>
+   <body class="bg-secondary">
 
       <div id="head">
-         <h1>Welcome to parsonal News portal</h1>
+         <h2>Welcome to parsonal News portal</h2>
          <img class="himg" src="dhonePata.jpg" width="100px;">
          <p>Get daily news update</p>
          <br>
          <div>
-            <marquee>This mind awearness week- Someone takes smoke with a fresh mind believeing the voice of 'you have nothing to happen bad'. </marquee>
+            <marquee>Nature says the two girl, "hello, come to see the sunset beside the hill". Where I feel satisfied that getting relief from a common life I will be able to take coconut water beside a sea with my soul-mates.</marquee>
          </div>
          <br>
-         <div class="btn">
-            <button><a href="news.html">News</a></button>
-            <button><a href="story.html">Story</a></button>
-            <button><a href="msg.html">Message</a></button>
-            <button><a href="about.html">About</a></button>
-            <button><a href="alert.html">Alert</a></button>
+         <div>
+            <button type="button" class="btn btn-success"><a href="news.html">News</a></button>
+            <button type="button" class="btn btn-success"><a href="story.html">Story</a></button>
+            <button type="button" class="btn btn-success"><a href="msg.html">Message</a></button>
+            <button type="button" class="btn btn-success"><a href="about.html">About</a></button>
+            <button type="button" class="btn btn-success"><a href="alert.html">Alert</a></button>
          </div>
          <br>
          <hr width="75%">
          <br>
       </div>
 
-      <div id="main">
-         <img src="photos/hospital1.jpg" width="400px">
-         <p>Chaos of peoples mind say this world is too much old. And it took more old to understand the thing that it's destroyed after our last birth.</p>
-         <date>15/12/2025</date>
-         <hr>
-      </div>
+      
       <div>
-         <img src="photos/flower1.jpg" width="400px">
-         <p><Strong>Story:</Strong><a href="stories/stry2.html" style="color:yellow; text-decoration:none;" > Flower knows the story of our movement.</a></p>
-         <date>15/12/2025</date>
+         <img src="photos/viceCity.jpg" width="400px">
+         <p>Sometimes the sunrise can bring the joy in mind so much then you are ready to feel this world and enjoy.</p>
+         <time>16/12/2025</time>
          <hr>
       </div>
-      <div>
-         <img src="photos/watch1.jpg" width="400px">
-         <p>Avoiding some noise like 'do work' in mind, it's not bad to be adapted with current environment to enjoy.</p>
-         <date>15/12/2025</date>
-         <hr>
-      </div>
+      
 
    </body>
    <dr></dr>
