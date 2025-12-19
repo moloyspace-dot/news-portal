@@ -38,6 +38,30 @@
          margin-left:12px;
       }
 
+
+      .notification {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* The red dot */
+  .notification .dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white; /* white border for better visibility */
+  }
+
+  /* Optional hover effect */
+  .notification:hover .dot {
+    background-color: darkred;
+  }
+
       @media (max-width: 600px) {
       *{
          max-width: 960px;
@@ -76,6 +100,8 @@
             <button type="button" class="btn btn-success"><a href="msg.html">Message</a></button>
             <button type="button" class="btn btn-success"><a href="about.html">About</a></button>
             <button type="button" class="btn btn-success"><a href="alert.html">Alert</a></button>
+            <button type="button" class="btn btn-success"><a href="report.html">Report</a></button>
+            <button type="button" class="btn btn-success"><a href="notice/notice.html">Notice <span class="notification">🔔<span class="dot"></span></span></a></button>
          </div>
          <br/>
          <hr width="75%">
@@ -83,34 +109,33 @@
       </div>
 
       
+     
+
       <div>
-         <h3>Hobby Report 1</h3>
-         <img src="photos/New Doc ১২-১৮-২০২৫ ১২.১৫_2.jpg" width="220px"/>
+         <h3>Hobby Report</h3>
+         <img src="photos/New Doc ১২-১৯-২০২৫ ২১.০৩.jpg" width="220px"/>
          <br/>
-         <a class="ha" href="photos/New Doc ১২-১৮-২০২৫ ১২.১৫_2.jpg" style="color:#E4B6B6; text-decoration:none">Open image</a>
-         <br/> <br/>
-         <time>18/12/2025</time>
-         <hr/>
+         <a class="ha" href="photos/New Doc ১২-১৯-২০২৫ ২১.০৩.jpg" style="color:#E4B6B6; text-decoration:none;">Open image</a>
+         <br/><br/>
+         <time>19/12/2025</time>
       </div>
 
       <div>
-         <h3>Hobby Report 2</h3>
-         <img src="photos/New Doc ১২-১৮-২০২৫ ১৩.৫৬.jpg" width="220px;"/>
+         <h3>Hobby Report</h3>
+         <img src="photos/New Doc ১২-১৯-২০২৫ ২১.০৫.jpg" width="220px"/>
          <br/>
-         <a class="ha" href="photos/New Doc ১২-১৮-২০২৫ ১৩.৫৬.jpg" style="color:#E4B6B6; text-decoration:none;">Open image</a>
+         <a class="ha" href="photos/New Doc ১২-১৯-২০২৫ ২১.০৫.jpg" style="color:#E4B6B6; text-decoration:none;">Open image</a>
          <br/><br/>
-         <time>18/12/2025</time>
-         <hr/>
+         <time>19/12/2025</time>
       </div>
 
       <div>
-         <h3>Hobby Report 3</h3>
-         <img src="photos/New Doc ১২-১৮-২০২৫ ১৮.৫১.jpg" width="220px;"/>
+         <h3>Hobby Report</h3>
+         <img src="photos/New Doc ১২-১৯-২০২৫ ২১.০২.jpg" width="220px"/>
          <br/>
-         <a class="ha" href="photos/New Doc ১২-১৮-২০২৫ ১৮.৫১.jpg" style="color:#E4B6B6; text-decoration:none;">Open image</a>
+         <a class="ha" href="photos/New Doc ১২-১৯-২০২৫ ২১.০২.jpg" style="color:#E4B6B6; text-decoration:none;">Open image</a>
          <br/><br/>
-         <time>18/12/2025</time>
-         <hr/>
+         <time>19/12/2025</time>
       </div>
       
 
