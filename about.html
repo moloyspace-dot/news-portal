@@ -1,12 +1,93 @@
 <html>
    <style>
-      *{
-         margin-top:43px;
+      .mly{
+         margin:30px;
+         width:190px;
+         border:4px dotted #3175A0;
+         border-radius:50%;
+      }
+      .mly:hover{
+         filter: hue-rotate(145deg);
+      }
+      .info{
+         text-align:center;
+      }
+      .info>li:hover{
+         background-color:#E8F6F5;
+         color:#777677;
       }
    </style>
-   <head><title>About</title></head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+   <head><title>About this site</title></head>
    <body>
-      <p>Founder of this site:- <a href="https://x.com/PageOfMoloy">His twitter</a></p>
-      <p>Email:- <i>moloy.leaf.90@gmail.com</i></p>
+      
+      <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Personal Newslet</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="index.html" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="news.html">News</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="story.html">Story</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="msg.html">Message</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="report.html">Report</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="notice/notice.html">Notice</a>
+                </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Necessary links
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+                   <li><a class="dropdown-item" href="https://chatgpt.com/">ChatGPT</a></li>
+                   <li><a class="dropdown-item" href="https://www.windy.com/">Weather</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+
+
+       <img src="photos/moloy.jpg" class=" mly mx-auto d-block" alt="Moloy">
+
+
+
+       <ul class="list-group list-group-flush info">
+         <li class="list-group-item" style="font-size:28px;">Moloy Kumar Ghosh</li>
+         <li class="list-group-item">BSc. in CSE  <sub>(North Western University, Khulna)</sub></li>
+         <li class="list-group-item">Web Developer</li>
+         <li class="list-group-item">Hindu</li>
+         <li class="list-group-item">Bangladeshi</li>
+         <li class="list-group-item">Moloy (Nickname)</li>
+         <li class="list-group-item">O+ (Blood group)</li>
+         <li class="list-group-item">Sotal, Bhattaprotap, Bagerhat</li>
+         <li class="list-group-item">moloy.ghosh.cse@gmail.com</li>
+       </ul>
+       <hr/>
+
+       <br/>
+       <br/>
+
    </body>
 </html>
