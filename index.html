@@ -35,7 +35,9 @@
       .ha{
          margin-left:12px;
       }
-
+      #ful{
+         border:0px;
+      }
 
       .notification {
     position: relative;
@@ -59,6 +61,8 @@
   .notification:hover .dot {
     background-color: darkred;
   }
+
+
 
       @media (max-width: 600px) {
       *{
@@ -85,7 +89,11 @@
 
       <div id="head">
          <h2>Welcome to parsonal News portal</h2>
-         <img class="himg" src="dhonePata.jpg" width="100px;">
+         <div id="headImg">
+            <img class="himg" src="dhonePata.jpg" width="100px;"/>
+            <img id="ful" width="43px;"/>
+            <p></p>
+         </div>
          <p>Get daily news update</p>
          <br>
          <div>
@@ -192,7 +200,23 @@
    </body>
    <br/><br/>
    <footer id="footer">
-      <spam id="spmf"><button type="button" class="btn btn-success"><a href="bangladesh.html">Bangladesh</a></button></spam>
+      <spam id="spmf">
+         <button type="button" class="btn btn-success"><a href="bangladesh.html">Bangladesh</a></button>
+         <button type="button" class="btn btn-success"><a href="ancient.html">Ancient</a></button>
+      </spam>
       <p class="ftr">----------------------------<br>A first newslet which can find what peoples mind chaos.</p>
    </footer>
+
+   <script>
+      const chobi= document.getElementById("ful");
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+      console.log(`Current Time: ${hours}:${minutes}:${seconds}`);
+      if(hours>7 && hours<19){
+         chobi.src="photos/day.png";
+      }
+      else chobi.src="photos/night.png";
+   </script>
 </html>
