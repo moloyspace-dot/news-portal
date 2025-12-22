@@ -4,6 +4,7 @@
    <style>
       h3{
          text-align:center;
+         margin:16px;
       }
       #busses{
          margin:17px;
@@ -24,6 +25,10 @@
          margin-bottom:15px;
       }
       #getBus{
+         display:none;
+      }
+      #gua{
+         margin:18px;
          display:none;
       }
    </style>
@@ -91,6 +96,10 @@
       <input type="text" id="name" placeholder="Give your name"/>
       <button class="btn btn-primary" onClick="getName()" id="btFirst">Submit</button>
       <br/>
+      <div class="alert alert-dark alert-dismissible fade show" role="alert" id="gua">
+         <strong>Hey there!</strong> If you did't find any work yet then wait for a year to upgrade your skill and be prepared.
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+       </div>
       <br/>
       <hr/>
       <div id="getBus">
@@ -99,7 +108,7 @@
             Your are selected for a work travelling with bus without any cost.</b></p>
          <hr/>
          <p><b>Name: </b><span id="outName"></span></p>
-         <p class="text-primary">The number of busses those busses which are yours after send us your opinion through this website:</p>
+         <p class="text-primary">The number of busses those busses which will be yours after send us your opinion through this website:</p>
          <div id="busses">
             <div class="busn">Khulna-ka 209782</div>
             <div class="busn">Jassure-jha 9280521</div>
@@ -107,7 +116,7 @@
             <div class="busn">Sagorika van 77852692</div>
             <div class="busn">Normohol-sha 02982787</div>
          </div>
-         <p class="text-warning">Keep your id card and othr necessary things if you things these things are your necessaries.</p>
+         <p class="text-warning">Keep your id card and other necessary things if you think these things are your necessaries.</p>
          <p class="text-info">You will get full support for anything of your needs.</p>
          <p>Please give your opinion so that we can be able to organize it according to your opinion.</p>
          <textarea rows="3" cols="20" disabled>Your opinion.</textarea> <br/>
@@ -117,11 +126,18 @@
     </div>
 
 
+
+    <blockquote class="blockquote">
+      <p style="opacity:0.5; font-size:13px; ">----------------------------<br>A first newslet which can find what peoples mind chaos.</p>
+   </blockquote>
+
 </body>
 <script>
+   var num=0;
    function getName(){
       let name=  document.getElementById("name").value;
-
+      num=num+1;
+      console.log(num);
       if(name.includes("Moloy")){
          document.getElementById("getBus").style.display="none";
          alert("He is already varified. Please provide your own name");
@@ -139,6 +155,10 @@
       else{
          document.getElementById("getBus").style.display="none";
          alert("Invalid Name. Please Provide your valid name.");
+      }
+
+      if(num>4){
+         document.getElementById("gua").style.display="block";
       }
    }
 
