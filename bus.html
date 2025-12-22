@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      h3{
+         text-align:center;
+      }
+      #busses{
+         margin:17px;
+         text-align:center;
+      }
+      .busn{
+         margin:4px;
+         padding:5px;
+         border:2px dotted black;
+         border-radius:6px;
+      }
+      #main{
+         margin:18px;
+         padding:13px;
+      }
+      #firstbtn{
+         margin-top:17px;
+         margin-bottom:15px;
+      }
+      #getBus{
+         display:none;
+      }
+   </style>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your work</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Personal Newslet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="index.html" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="story.html">Story</a>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link" href="report.html">Report</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="notice/notice.html">Notice</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="alert.html">Alert</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="about.html">About</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="bangladesh.html">Bangladesh</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="ancient.html">Ancient</a>
+             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Necessary links
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+                <li><a class="dropdown-item" href="https://chatgpt.com/">ChatGPT</a></li>
+                <li><a class="dropdown-item" href="https://www.windy.com/">Weather</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <h3 class="text-success">Check if there is any work is waiting for you.</h3>
+    <br/>
+    <div id="main">
+      <input type="text" id="name" placeholder="Give your name"/>
+      <button class="btn btn-primary" onClick="getName()" id="btFirst">Submit</button>
+      <br/>
+      <br/>
+      <hr/>
+      <div id="getBus">
+         <p><b>
+            <span class="text-danger">Congratulations!</span>
+            Your are selected for a work travelling with bus without any cost.</b></p>
+         <hr/>
+         <p><b>Name: </b><span id="outName"></span></p>
+         <p class="text-primary">The number of busses those busses which are yours after send us your opinion through this website:</p>
+         <div id="busses">
+            <div class="busn">Khulna-ka 209782</div>
+            <div class="busn">Jassure-jha 9280521</div>
+            <div class="busn">Kamal-auto 2175629</div>
+            <div class="busn">Sagorika van 77852692</div>
+            <div class="busn">Normohol-sha 02982787</div>
+         </div>
+         <p class="text-warning">Keep your id card and othr necessary things if you things these things are your necessaries.</p>
+         <p class="text-info">You will get full support for anything of your needs.</p>
+         <p>Please give your opinion so that we can be able to organize it according to your opinion.</p>
+         <textarea rows="3" cols="20" disabled>Your opinion.</textarea> <br/>
+         <button class="btn btn-primary disabled" id="firstbtn">Please Send!</button>
+         <p><i>-Thank You.</i></p>
+      </div>
+    </div>
+
+
+</body>
+<script>
+   function getName(){
+      let name=  document.getElementById("name").value;
+
+      if(name.includes("Moloy")){
+         document.getElementById("getBus").style.display="none";
+         alert("He is already varified. Please provide your own name");
+      }
+      else if(name.length>3){
+         document.getElementById("outName").innerHTML=name;
+      document.getElementById("name").value="";
+      document.getElementById("getBus").style.display="block";
+      document.getElementById("btFirst").disabled=true;
+      setTimeout(function () {
+    document.getElementById("getBus").style.display="none";
+    document.getElementById("btFirst").disabled=false;
+   }, 300000);
+      }
+      else{
+         document.getElementById("getBus").style.display="none";
+         alert("Invalid Name. Please Provide your valid name.");
+      }
+   }
+
+</script>
+</html>
