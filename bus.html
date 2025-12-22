@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <style>
-      h3{
+      h3,h2{
          text-align:center;
          margin:16px;
       }
@@ -90,7 +90,8 @@
     <br/>
     <br/>
 
-    <h3 class="text-success">Check if there is any work is waiting for you.</h3>
+    <h2 id="hlw" class="text-warning"></h2>
+    <h3 class="text-success" id="chk">Check if there is any work is waiting for you.</h3>
     <br/>
     <div id="main">
       <input type="text" id="name" placeholder="Give your name"/>
@@ -109,6 +110,7 @@
          <hr/>
          <p><b>Name: </b><span id="outName"></span></p>
          <p class="text-primary">The number of busses those busses which will be yours after send us your opinion through this website:</p>
+         <img src="photos/bus-green-bus-58965dd0f91c1f2536f848c9593d12e6.png" width="130px;"/>
          <div id="busses">
             <div class="busn">Khulna-ka 209782</div>
             <div class="busn">Jassure-jha 9280521</div>
@@ -119,9 +121,9 @@
          <p class="text-warning">Keep your id card and other necessary things if you think these things are your necessaries.</p>
          <p class="text-info">You will get full support for anything of your needs.</p>
          <p>Please give your opinion so that we can be able to organize it according to your opinion.</p>
-         <textarea rows="3" cols="20" disabled>Your opinion.</textarea> <br/>
-         <button class="btn btn-primary disabled" id="firstbtn">Please Send!</button>
-         <p><i>-Thank You.</i></p>
+         <textarea rows="3" cols="20" disabled>Your opinion. (You are not eligible for this now.)</textarea> <br/>
+         <button class="btn btn-primary disabled" id="firstbtn">Please Send!</button><br/><br/>
+         <p><i class="text-light bg-secondary" style="padding:13px; border-radius:8px;">-We hope for a better future of your family.</i></p>
       </div>
     </div>
 
@@ -136,6 +138,8 @@
    var num=0;
    function getName(){
       let name=  document.getElementById("name").value;
+      document.getElementById("hlw").innerHTML="Hellow Mr/Mrs "+name;
+      document.getElementById("chk").innerHTML="Checked";
       num=num+1;
       console.log(num);
       if(name.includes("Moloy")){
