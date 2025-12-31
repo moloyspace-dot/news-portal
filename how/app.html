@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html  lang="en">
+   <head>
+      <style>
+         #body{
+            background-color:#CEE3E8;
+            margin:15px;
+         }
+         #src{
+            color:#D2AF7B;
+         }
+         #hdr{
+            color:#3383E8;
+         }
+         #lld{
+            color:#E7AAB4;
+         }
+         .slp{
+            background-color:#5B7568;
+            color:#A1BDBB;
+         }
+      </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Computer Application</title>
+      <!-- bootstrap cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>   
+   </head>
+   <body id="body">
+      <div>
+         <h1 id="src">How computer application works.</h1>
+         <div id="hdr">
+            <p>You use computer, smart phone, normal phone everywhere you see some apps. App is basically some lines of instructions.
+               When these instructions works then it is called 'run'. Actually applications run on the RAM. (During buying phone or
+               computer you see this. 8GB Ram or 4GB Ram. Ram is a kind of memory. Normally applications are combined of some pages
+               of code which you keep in your device's normal memory. Menas when it is installed it takes your phone's normal storage to stay silently.
+               But when it runs? Then it uses RAM. Means those pages of codes use RAM to work. That's why low RAM's computer or phone
+               often goes hang. Because some of applications always work behind the screen means though you do not use. These are like
+               message, call etc apps. You get the call instantly when someone call you. On the other hand think about a call on messenger
+               which you can get after an hour when you open your messenger app again, someone called when this application was closed.
+               Some of the applications or most of the modern applications use internet. Normally internet is just a connection. When you
+               open your gallery app, you can see photos. Because your device's memory card stores this. But when you open facebook then a
+               photo you see... it comes from other storage which is so far from you at any other city or other computer. Broadly internet
+               is so many connections with a large area. From one storage so meny people can request to see a photo.<br/><br/>
+               Now deeply how a social app (like Facebook/ instagram/ twitter works):-
+               <ol>
+                  <li>
+                     <b>Server</b>- You want to open a page on facebook? Your facebook app request it to the server to get the code/ images/ audio or
+                     any other types of data (kept in any storage). After it coming via the internet your app show this on the screen. Again when you upload your profile picture
+                     then it requests to the server to keep your data (at any storage). So mainly handle user related communication server works. Devices
+                     are identified uniquely by its IP address and other mechanisms. And for a large amount of the storage you can hear the name of <b>Datacenter</b>.
+                  </li> <br/>
+                  <li>
+                     <b>Database</b>- It is that storage which keeps your data nicely and organisely (actually your data in a file which is kept in that storage).<br/><br/>
+                     Suppose that this is a text file in which datas are kept a shape of database:
+                     <pre class="slp"><code>
+                        moloy:
+                        {
+                           "image":"picName.jpg",
+                           "name":"Moloy Ghosh",
+                           "desception":"I like my computer more than to eat",
+                           "posts":
+                              {
+                                 "id":"001",
+                                 "text":"Seriously there was a problem in this universe to keep control the mad people"
+                              },
+                              {
+                                 "id":"006",
+                                 "text":"Nowadays it is really a matter of laugh that whatever you learn is not necessery after your death"
+                              }
+
+                        }
+                     </code></pre>
+                     <i>Also you can keep as table style or so on.</i>
+                  </li> <br/>
+                  <li>
+                     <b>Backend</b>- It is made with so many lines of code. code is actually nothing but instruction. There are some instructions...
+                     a computer or a device knows.<br/><br/>
+                     these are like:-
+                     <pre class="slp"><code>
+                        <span>
+                        print: "Hellow world";
+                        </span>
+                       <span>
+                        if (user types "ok"):
+                           {print: "I am honest"}
+                        else of anything:
+                           {print: "I am not honest"}
+                        </span>
+                        <span>
+                        loop(from 1 to 199):
+                        {
+                           print: "I love Bangladesh";
+                        }
+                        </span>
+                     </code></pre>
+                     <i>Here between inverted commas, user can write anything. But others are keywords of the code. Accoring to these keywords for the
+                        fist one, it prints on the computer screen <u>Hellow World</u>. For the third part it will print on the computer screen <U>I love
+                           Bangladesh.</U> 199 times. Means you will see 199 lines of same sentence on your screen. You can change the value of number as you wish  </i>
+                     For more... functions, some systems of showing data etc are all about the code. You are to know logics to use these kind of code differently and
+                     to do many kind of calculations of complex demanded application. And more complex logics using these instruction you can create different
+                     models which called Machine Learning.<br/><br/>
+                     Suppose another code:
+                     <pre class="slp"><code>
+                        function jogKoro(a,b){
+                           c= a+b;
+                        }
+
+                        print: {c};
+                     </code></pre>
+                     <i>Here any user any give any two numbers. which will set as 'a' and 'b'. And at last user will see the value of
+                        'c' on the screen which is actually a function. here 'jogKoro' is function name.</i><br/><br/>
+                     For showing the database's value:-
+                     <pre class="slp"><code>
+                     print: {moloy.description}
+                     </code></pre>
+                     <i>This will show the sentense <u>I like my computer more than to eat</u>. (See that here I did not use inverted commas).</i>
+                     
+                  </li><br/>
+                  <li>
+                     <b>Frontend</b>- Here is the code of how to show your code on the page. like:-
+                     <pre class="slp"><code>
+                        &lt;circle&gt; print: {moloy.image} &lt;/circle&gt;
+                        &lt;rectangle&gt; print:{moloy.name} &lt;/rectangle&gt;
+                        &lt;line&gt; print:{moloy.description} &lt;/line&gt;
+                     </code>
+                     </pre>
+                     <i>think these codes will give a shape on the screen as something like facebook when you will visit my profile, getting data through server.</i><br/><br/>
+                     for color:-
+                     <pre class="slp"><code>
+                        &lt;circle "collor:yellow;"&gt; print: {moloy.image} &lt;/circle&gt;
+                     </code></pre>
+                  </li>
+               </ol>
+            </p>
+            <p>
+               Always we think to find something new to develop. So for other features you can think cache memory of your application. Through
+               internet which pages you see frequently your app keep these on cache memory (you can think it as normal memory). Because it is
+               better to bring the same things from other storage kept so far somewhere.
+            </p>
+            <hr/>
+         </div>
+      </div>
+      <div id="lld">
+         <p>
+            <strong><a href="../about.html" style="text-decoration:none; color:#7F555C;">Moloy Ghosh</a></strong><br/>
+            <span>B.Sc in Computer Science and Engineering. <sub>(North Western University, Khulna)</sub></span>
+          </p>
+      </div>
+      <footer>
+         <p style="opacity:0.5; font-size:12px;">----------------------------<br>A first newslet which can find what peoples mind chaos.</p>
+      </footer>
+   </body>
+</html>
